@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"wepi2c\stm32f0xx_hal_i2c_ex.o"
+"wepi2c\stm32f0xx_hal_cortex.o"
+"wepi2c\stm32f0xx_hal_flash_ex.o"
+"wepi2c\stm32f0xx_hal_i2c.o"
+"wepi2c\stm32f0xx_hal_flash.o"
+"wepi2c\stm32f0xx_hal_tim_ex.o"
+"wepi2c\stm32f0xx_hal_pwr.o"
+"wepi2c\stm32f0xx_hal_tim.o"
+"wepi2c\stm32f0xx_hal_rcc.o"
+"wepi2c\stm32f0xx_hal.o"
+"wepi2c\stm32f0xx_hal_pwr_ex.o"
+"wepi2c\stm32f0xx_hal_gpio.o"
+"wepi2c\stm32f0xx_hal_rcc_ex.o"
+"wepi2c\stm32f0xx_hal_dma.o"
+"wepi2c\stm32f0xx_it.o"
+"wepi2c\stm32f0xx_hal_msp.o"
+"wepi2c\i2c.o"
+"wepi2c\main.o"
+"wepi2c\gpio.o"
+"wepi2c\system_stm32f0xx.o"
+"wepi2c\startup_stm32f030x8.o"
+--library_type=microlib --strict --scatter "WEPI2C\WEPI2C.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "WEPI2C.map" -o WEPI2C\WEPI2C.axf
